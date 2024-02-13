@@ -30,9 +30,11 @@ jobs:
         uses: prefix-dev/rattler-build-action@v0.1.1
         with:
           recipe-path: ./recipes/rich/recipe.yaml
+          upload-artifact: false
       - name: Build conda package
         uses: prefix-dev/rattler-build-action@v0.1.1
         with:
           recipe-path: ./recipes/curl/recipe.yaml
+          upload-artifact: false
 
     
