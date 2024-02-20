@@ -3,9 +3,11 @@ on:
     branches: [main]
     paths:
       - "recipes/**"
+      - ".github/workflows/**"
   pull_request:
     paths:
       - "recipes/**"
+      - ".github/workflows/**"
 
   workflow_dispatch:
 
