@@ -28,13 +28,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: Build conda package
-        uses: prefix-dev/rattler-build-action@v0.2.0
+      - name: Build "rich" conda package
+        uses: prefix-dev/rattler-build-action@main
         with:
           recipe-path: ./recipes/rich/recipe.yaml
           upload-artifact: false
-      - name: Build conda package
-        uses: prefix-dev/rattler-build-action@v0.2.0
+      - name: Build "curl" conda package
+        uses: prefix-dev/rattler-build-action@main
         with:
           recipe-path: ./recipes/curl/recipe.yaml
           upload-artifact: false
